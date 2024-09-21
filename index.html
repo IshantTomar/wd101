@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Registration</title>
 </head>
 <body>
     <div class="min-h-screen flex items-center justify-center bg-neutral-900">
 
-        <div class="bg-neutral-800 p-8 w-2/3 rounded shadow-[10px_10px_0px_0px_rgba(0,0,0,0.2)] ">
+        <div class="bg-neutral-800 p-8 max-w-lg rounded shadow-[10px_10px_0px_0px_rgba(0,0,0,0.2)] ">
+
             <h2 class="text-3xl font-bold mb-10 text-gray-300 text-center">Registration Form</h2>
+
+            <form class="space-y-5">
+
+            <div>
+                <label for="name" class="text-gray-300 font-semibold px-14 text-base leading-7">Name</label>
+                <input required type="text" id="name" name="name" class="w-1/2 px-3 bg-neutral-300 rounded shadow-[3px_3px_0px_1px_rgba(0,0,0,0.2)] placeholder-gray-600 text-base leading-7" placeholder="Enter full name"> 
+            </div>
+
+            <div>
+                <label for="email" class="text-gray-300 font-semibold ml-0 mr-1 px-14 text-base leading-7">Email</label>
+                <input required type="email" id="email" name="email" class="w-1/2 px-3 bg-neutral-300 rounded shadow-[3px_3px_0px_1px_rgba(0,0,0,0.2)] placeholder-gray-600 text-base leading-7" placeholder="Enter email">  
+            </div>
+
+            <div>
+                <label for="password" class="text-gray-300 font-semibold ml-[24px] px-8 text-base leading-7">Password</label>
+                <input required type="password" id="password" name="password" class="w-1/2 px-3 mr-4 bg-neutral-300 rounded shadow-[3px_3px_0px_1px_rgba(0,0,0,0.2)] placeholder-gray-600 text-base leading-7" placeholder="Enter password">  
+            </div>
+
+            <div>
+                <label for="dob" class="text-gray-300 font-semibold ml-0 mr-1 px-14 text-base leading-7">Email</label>
+                <input required type="date" id="dob" name="dob" class="w-1/2 px-3 bg-neutral-300 rounded shadow-[3px_3px_0px_1px_rgba(0,0,0,0.2)] placeholder-gray-500 text-base leading-7">  
+            </div>
+
+            <div class="ml-14">
+                <input required type="checkbox" name="terms" id="terms" class="rounded">
+                <label for="terms" class="text-gray-300 leading-7 text-sm">Accept Terms & Conditions</label>
+            </div>
+
+            <div>
+                <button type="submit" class=" bg-blue-400 text-white ml-14 px-4 py-1 rounded shadow-[3px_3px_0px_1px_rgba(0,89,196,0.5)] hover:bg-blue-500 transition duration-200" >Submit</button>
+            </div>
+            </form>
         </div>
     </div>
     
